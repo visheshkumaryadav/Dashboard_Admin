@@ -1,0 +1,11 @@
+.border{
+    border: 1px solid black;
+    padding: 1% 1%;
+}
+.text{
+    color: blue;
+    cursor: pointer;
+}
+.text:hover {
+    color:rgb(72, 72, 183) ;
+}

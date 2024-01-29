@@ -1,0 +1,32 @@
+<div class="container">
+    <h3>Settlement Report</h3>
+    <div class="row">
+        <div class="col-4 ">
+            <h5>Client Code</h5>
+            <mat-form-field>
+                <mat-label>Selects</mat-label>
+                <select matNativeControl [disabled]="disableSelect.value">
+                    <option value="select" selected>Select</option>
+                    <option value="all">All</option>
+                </select>
+            </mat-form-field><br>
+            <button type="submit" class="btn btn-danger">Search</button>
+        </div>
+        <div class=" a col-7">
+            <h5>From to End</h5>
+            <mat-form-field class="example-form-field">
+                <mat-date-range-input
+                  [formGroup]="campaignTwo"
+                  [rangePicker]="campaignTwoPicker"
+                  [comparisonStart]="campaignOne.value.start"
+                  [comparisonEnd]="campaignOne.value.end">
+                  <input matStartDate placeholder="Start date" formControlName="start">
+                  <input matEndDate placeholder="End date" formControlName="end">
+                </mat-date-range-input>
+                <mat-datepicker-toggle matIconSuffix [for]="campaignTwoPicker"></mat-datepicker-toggle>
+                <mat-date-range-picker #campaignTwoPicker></mat-date-range-picker>
+              </mat-form-field>
+    </div>
+    </div>
+    <hr>
+</div>

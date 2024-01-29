@@ -1,0 +1,157 @@
+<div class="container">
+    <h1 style="text-align: center;"><b>FAQs/Help</b></h1>
+    <h5 style="text-align: center;">Nifi Payments is a rapidly growing FinTech company that has developed the World’s
+        First API Driven Unified Payment
+        Platform. Nifi Payments has its headquarters in Noida, Nifi Payments and collection application suite – white
+        labelled to multiple public and
+        private banks, including BOI, BOB,Kotak,HDFC, IDFC First & Indian Bank – has already processed more than INR
+        40.3 Billion,
+        a figure that will grow exponentially over the next several months</h5>
+    <div class="border">
+        <ul>
+            <li class="text" (click)="toggleContent(1)"><p>What are the benefits of using Nifi Payments?</p></li>
+            <div *ngIf="showContent[1]">
+                <p>With Nifi Payments, you get unmatched benefits that suit all your needs. Some benefits are listed
+                    below:</p>
+                <ul>
+                    <li>Maximum Online & Offline Modes</li>
+                    <li>Top Notch Security</li>
+                    <li>Advanced API</li>
+                    <li>Easy Integration</li>
+                    <li>One Integration for Online/Offline Payments</li>
+                    <li>Best in class Support</li>
+                    <li>One of the Highest Success Rates</li>
+                </ul>
+            </div>
+            <li class="text" (click)="toggleContent(2)"><p>Is Nifi Payments free or are there any charges? What are the
+                charges taken by Nifi Payments for various services</p></li>
+            <div *ngIf="showContent[2]">
+                <ul>
+                    <li>Nifi Payments charges according to industry standards for its services</li>
+                    <li>For PG- It depends on the merchant’s industry and business volumes.</li>
+                    <li>For Subscription- Nominal fee for mandates and transactions as per industry norms and as agreed
+                        with the merchant.</li>
+                    <li>For Paylink- Nominal fee, as agreed with the merchant.</li>
+                    <li>For Payout- Nominal fee, as agreed with the merchant.</li>
+                </ul>
+            </div>
+            <li class="text" (click)="toggleContent(3)"><p>How do I signup for Nifi Payments?</p></li>
+            <div *ngIf="showContent[3]">
+                <p>To sign up for SabPaisa, visit <a href="signup">https://sabpaisa.in/sign-up/</a>, fill in your
+                    details, and our team will get in touch with you at the earliest.</p>
+            </div>
+            <li class="text" (click)="toggleContent(4)"><p>What all card Information does Nifi Payments store?</p></li>
+            <div *ngIf="showContent[4]">
+                <p>Nifi Payments stores only the last four digits of a card, which is the industry standard.</p>
+            </div>
+            <li class="text" (click)="toggleContent(5)"><p>For what purposes can the end-customer use Nifi Payments?</p></li>
+            <div *ngIf="showContent[5]">
+                <ul>
+                    <li>Payment collection through Payment Gateway.</li>
+                    <li>Auto payment collection through Payment Links even without a website.</li>
+                    <li>Collect recurring payments through the Subscription Platform.</li>
+                </ul>
+            </div>
+
+            <li class="text" (click)="toggleContent(6)"><p>What payment options are available in Nifi Payments?</p></li>
+            <div *ngIf="showContent[6]">
+                <p>All the modes of payments are available with SabPaia, from Debit cards, Credit Card, Wallets, UPI,
+                    Bharat QR etc. We have almost 10 lac e-cash counters that make payments convenient.</p>
+            </div>
+
+            <li class="text" (click)="toggleContent(7)"><p>My customer mostly uses Net banking, what’s in for me?</p></li>
+            <div *ngIf="showContent[7]">
+                <p>Nifi Payments offers Netbanking services with all major banks for the convenience of the customers.
+                </p>
+            </div>
+
+            <li class="text" (click)="toggleContent(8)"><p>Do you support International Payments?</p></li>
+            <div *ngIf="showContent[8]">
+                <p>Nifi Payments is working on getting international payments.</p>
+            </div>
+
+            <li class="text" (click)="toggleContent(9)"><p>Do you support mobile payments?</p></li>
+            <div *ngIf="showContent[9]">
+                <p>Yes, Nifi Payments supports mobile payments.p>
+            </div>
+
+            <li class="text" (click)="toggleContent(10)"><p>Do you support partial refunds?</p></li>
+            <div *ngIf="showContent[10]">
+                <p>Yes, we support partial refunds.</p>
+            </div>
+
+            <li class="text" (click)="toggleContent(11)"><p>How long does it take to go live?</p></li>
+            <div *ngIf="showContent[11]">
+                <p>Nifi Payments offers you the fastest TAT after all formalities like KYC, agreement etc is done.</p>
+            </div>
+
+            <li class="text" (click)="toggleContent(12)"><p>Is the payment experience customisable as per my website’s look
+                and feel?</p></li>
+            <div *ngIf="showContent[12]">
+                <p>No, the payment experience is not customisable as per the merchant’s website’s look and feel at this
+                    point.</p>
+            </div>
+            <li class="text" (click)="toggleContent(13)"><p>How and when will I receive the money for payments made to us?</p>
+            </li>
+            <div *ngIf="showContent[13]">
+                <p>Nifi Payments Payment Gateway is governed by the Payment and Settlement Act of RBI and payments are
+                    done to merchants within RBI prescribed TATs.</p>
+            </div>
+            <li class="text" (click)="toggleContent(14)"><p>What kind Of MIS/Reports do you provide?</p></li>
+            <div *ngIf="showContent[14]">
+                <p><b>We provide a dashboard to every merchant, wherein they can do the following:</b></p>
+                <ul>
+                    <li>View/download transactions with date range updated in real-time including offline modes like
+                        cash, NEFT, RTGS etc.</li>
+                    <li>View/download settlements daily</li>
+                    <li>View/download settlements daily</li>
+                    <li>Create payment links</li>
+                    <li>Can also see Nifi Payments updated product catalogue</li>
+                </ul>
+            </div>
+            <li class="text" (click)="toggleContent(15)"><p>What kind of customer support can I expect from Nifi Payments?</p>
+            </li>
+            <div *ngIf="showContent[15]">
+                <p>To ensure that all our merchants/clients are given 100% attention, Nifi Payments assigns every
+                    merchant an Account Manager to handle any issues.</p>
+            </div>
+            <li class="text" (click)="toggleContent(16)"><p>Are You PCI DSS Certified?</p></li>
+            <div *ngIf="showContent[16]">
+                <p>Yes, we are PCI-DSS certified.</p>
+            </div>
+            <li class="text" (click)="toggleContent(17)"><p>How will you guarantee my data privacy?</p></li>
+            <div *ngIf="showContent[17]">
+                <p>Nifi Payments uses the HTTPS extension that protects the integrity and confidentiality of data for
+                    secure connections. We are also PCI-DSS certified and adhere to RBI guidelines of data privacy.</p>
+            </div>
+            <li class="text" (click)="toggleContent(18)"><p>What all documents are required for signing up with Nifi
+                Payments?</p></li>
+            <div *ngIf="showContent[18]">
+                <p>It varies with the constitution of the firm. Broadly, documents for business proofs, signatory
+                    individual’s proofs, bank statements and cancelled cheques along with GST registration.</p>
+            </div>
+            <li class="text" (click)="toggleContent(19)"><p>Do you have Sandbox where I can test the integration before
+                going live with Nifi Payments?</p></li>
+            <div *ngIf="showContent[19]">
+                <p>Yes, Nifi Payments has a Sandbox where one can test the integration before going live with Nifi
+                    Payments.</p>
+            </div>
+            <li class="text" (click)="toggleContent(20)"><p>How can I contact Nifi Payments?</p></li>
+            <div *ngIf="showContent[20]">
+                <p>For sales enquiries, signup with your details at <a href="">https://sabpaisa.in/sign-up/</a> and our
+                    Sales Team will get in touch with you..</p>
+            </div>
+            <li class="text" (click)="toggleContent(21)"><p>do I seek support from Nifi Payments?</p></li>
+            <div *ngIf="showContent[21]">
+                <p>For support, write to us at <a>support@sabpaisa.in</a> or call us at 011-41733223</p>
+            </div>
+            <li class="text" (click)="toggleContent(22)"><p>to calculate TSR (Transaction Success Rate)?</p></li>
+            <div *ngIf="showContent[22]">
+                <p>Transaction success rate (TSR) is calculated by dividing the total number of processed
+                    (success+busines declined) transactions by the total number of attempted transactions over a given
+                    time period. For example, if Nifi Payments processed 100 transactions, and 82 were successful & 16
+                    were failed due business declined, then your TSR would be 98%.</p>
+            </div>
+        </ul>
+    </div>
+</div>

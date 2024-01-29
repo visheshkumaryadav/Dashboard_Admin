@@ -1,0 +1,71 @@
+/* General Styles */
+.page{
+    padding: 2%;
+}
+.steplist {
+  border-top: 2px solid #ccc;
+  display: inline-flex;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  list-style-type: none;
+  gap: 17em;
+  margin: 0;
+  padding: 0;
+  --circle-radius: 8px;
+}
+
+.steplist li {
+  color: #999;
+  cursor: pointer;
+  padding: calc(5px + var(--circle-radius)) 0 0;
+  margin: 0;
+  position: relative;
+  text-align: center;
+}
+
+.steplist li::before {
+  background-color: #ccc;
+  border-radius: 50%;
+  content: '';
+  position: absolute;
+  height: calc(2 * var(--circle-radius));
+  width: calc(2 * var(--circle-radius));
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease;
+}
+
+.steplist .active {
+  color: black;
+}
+
+.steplist .active::before {
+  background-color: green;
+  box-shadow: 0 0 0 3px rgba(0,255,0,.25);
+}
+
+.steplist li:first-child::after {
+  background-color: white;
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  top: -2px;
+  left: calc(-50% - var(--circle-radius));
+}
+
+.steplist li:last-child::after {
+  background-color: white;
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  top: -2px;
+  left: calc(50% + var(--circle-radius));
+}
+
+.circle-big {
+  --circle-radius: 12px;
+}
+
+  

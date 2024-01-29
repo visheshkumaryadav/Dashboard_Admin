@@ -1,0 +1,10 @@
+<div class="container">
+    <h3>Transaction Summary</h3><br>
+    <mat-form-field>
+      <mat-label>Select days</mat-label>
+      <mat-select [(ngModel)]="selectedValue" name="food">
+        <mat-option *ngFor="let food of foods" [value]="food.value">{{food.viewValue}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  

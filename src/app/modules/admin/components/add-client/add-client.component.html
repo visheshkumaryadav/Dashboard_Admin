@@ -1,0 +1,25 @@
+<!-- child-client-form.component.html -->
+<mat-dialog-content>
+    <form>
+        <div class="row">
+      <mat-form-field>
+        <input matInput placeholder="Name" [(ngModel)]="childClient.name" name="name" required>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Mobile" [(ngModel)]="childClient.mobile" name="mobile" required>
+      </mat-form-field>
+    </div>
+      <div class="row">
+      <mat-form-field>
+        <input matInput placeholder="Email" [(ngModel)]="childClient.email" name="email" required>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Username" [(ngModel)]="childClient.username" name="username" required>
+      </mat-form-field>
+      </div>
+      
+      <br>
+      <button mat-raised-button color="primary" (click)="saveChildClient()">Save</button>
+    </form>
+  </mat-dialog-content>
+  

@@ -1,0 +1,67 @@
+<div class="container">
+    <h3>Transaction History</h3>
+    <div class="row">&nbsp;&nbsp;
+        <div class="a col-3 ">
+            <h5>Client Code</h5>
+            <mat-form-field>
+                <select matNativeControl [disabled]="disableSelect.value">
+                    <option value="select" selected>Select</option>
+                    <option value="all">All</option>
+                </select>
+            </mat-form-field><br>&nbsp;
+            <button type="submit" class="btn btn-danger">Search</button>
+        </div>
+        <div class=" a col-4">
+            <h5>From to End</h5>
+            <mat-form-field class="example-form-field">
+                <mat-date-range-input
+                  [formGroup]="campaignTwo"
+                  [rangePicker]="campaignTwoPicker"
+                  [comparisonStart]="campaignOne.value.start"
+                  [comparisonEnd]="campaignOne.value.end">
+                  <input matStartDate placeholder="Start date" formControlName="start">
+                  <input matEndDate placeholder="End date" formControlName="end">
+                </mat-date-range-input>
+                <mat-datepicker-toggle matIconSuffix [for]="campaignTwoPicker"></mat-datepicker-toggle>
+                <mat-date-range-picker #campaignTwoPicker></mat-date-range-picker>
+              </mat-form-field>
+    </div>
+    
+        <div class="a col-3">
+            <h5>Transactions Status</h5>
+            <mat-form-field>
+                <select matNativeControl [disabled]="disableSelect.value">
+                    <option value="all" selected>All</option>
+                    <option value="aborted">Aborted</option>
+                    <option value="challan_generated">Challan_Generated</option>
+                    <option value="failed">Failed</option>
+                    <option value="refunded">Refunded</option>
+                    <option value="refunded_initiated">Refunded_Initiated</option>
+                    <option value="success">Succed</option>
+                </select>
+            </mat-form-field>
+        </div>
+        <div class="a col-2">
+            <h5>Payment Mode</h5>
+            <mat-form-field>
+                <select matNativeControl [disabled]="disableSelect.value">
+                    <option value="all" selected>All</option>
+                    <option value="debit card">Debit Card</option>
+                    <option value="credit card">Credit Card</option>
+                    <option value="net banking">Net Banking</option>
+                    <option value="cash">Cash</option>
+                    <option value="neft/rtgs">NEFT/RTGS</option>
+                    <option value="upi">UPI</option>
+                    <option value="wallet">Wallet</option>
+                    <option value="bhim upi qr">BHIM UPI QR</option>
+                    <option value="static qr">Static QR</option>
+                    <option value="imps">IMPS</option>
+                    <option value="egov">EGOV</option>
+                    <option value="rupay card">Rupay Card</option>
+                    <option value="rtgs">RTGS</option>
+                    <option value="rupay credit card">Rupay Credit Card</option>
+                    <option value="upi intent">UPI Intent</option>
+                </select>
+            </mat-form-field>
+    </div>
+</div>
